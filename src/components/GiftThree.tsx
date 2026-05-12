@@ -32,9 +32,9 @@ export default function GiftThree({ onClose }: GiftThreeProps) {
     >
       <button 
         onClick={onClose}
-        className="fixed top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors z-50"
+        className="fixed top-4 right-4 md:top-6 md:right-6 p-3 rounded-full bg-black/50 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all z-[70] shadow-xl"
       >
-        <X className="w-6 h-6" />
+        <X className="w-5 h-5 md:w-6 md:h-6" />
       </button>
 
       {!showLetter ? (
@@ -42,7 +42,7 @@ export default function GiftThree({ onClose }: GiftThreeProps) {
           <motion.h2
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="text-3xl md:text-5xl font-bold text-center mb-16 text-glow"
+            className="text-2xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-glow"
           >
             Memory Gallery 🖼️
           </motion.h2>
@@ -83,7 +83,7 @@ export default function GiftThree({ onClose }: GiftThreeProps) {
           >
             <button
               onClick={() => setShowLetter(true)}
-              className="px-12 py-5 bg-gradient-to-r from-purple-deep to-pink-glow text-white rounded-full font-bold text-2xl shadow-[0_0_30px_rgba(255,0,255,0.3)] hover:scale-105 transition-transform"
+              className="px-8 py-4 md:px-12 md:py-5 bg-gradient-to-r from-purple-deep to-pink-glow text-white rounded-full font-bold text-lg md:text-2xl shadow-[0_0_30px_rgba(255,0,255,0.3)] hover:scale-105 transition-transform"
             >
               The Final Heartfelt Note 💙
             </button>

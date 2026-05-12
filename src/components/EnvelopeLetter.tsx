@@ -60,10 +60,10 @@ export default function EnvelopeLetter({ quote, signature, theme = "blue", onCom
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            className={`w-full max-w-2xl ${selected.bg} p-8 sm:p-12 md:p-16 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden`}
+            className={`w-full max-w-2xl ${selected.bg} p-6 sm:p-12 md:p-16 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden`}
             style={{ 
               backgroundImage: "url('https://www.transparenttextures.com/patterns/natural-paper.png')",
-              minHeight: "500px"
+              minHeight: "400px"
             }}
           >
             {/* Paper Texture Overlay */}
@@ -75,7 +75,7 @@ export default function EnvelopeLetter({ quote, signature, theme = "blue", onCom
               transition={{ delay: 0.5, duration: 1 }}
               className="relative z-10"
             >
-              <div className={`font-serif text-xl sm:text-2xl md:text-3xl leading-relaxed whitespace-pre-wrap italic ${selected.text}`}>
+              <div className={`font-serif text-lg sm:text-2xl md:text-3xl leading-relaxed whitespace-pre-wrap italic ${selected.text}`}>
                 {quote.split("").map((char, i) => (
                   <motion.span
                     key={i}
@@ -92,7 +92,7 @@ export default function EnvelopeLetter({ quote, signature, theme = "blue", onCom
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: quote.length * 0.03 + 1 }}
-                className={`mt-12 text-right font-script text-2xl md:text-4xl ${selected.text} opacity-80`}
+                className={`mt-8 md:mt-12 text-right font-script text-xl md:text-4xl ${selected.text} opacity-80`}
                 onAnimationComplete={() => setIsRead(true)}
               >
                 {signature}

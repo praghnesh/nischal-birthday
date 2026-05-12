@@ -22,9 +22,9 @@ export default function GiftTwo({ onClose }: GiftTwoProps) {
     >
       <button 
         onClick={onClose}
-        className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors z-50"
+        className="fixed top-4 right-4 md:top-6 md:right-6 p-3 rounded-full bg-black/50 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all z-[70] shadow-xl"
       >
-        <X className="w-6 h-6" />
+        <X className="w-5 h-5 md:w-6 md:h-6" />
       </button>
 
       {!showLetter ? (
@@ -32,7 +32,7 @@ export default function GiftTwo({ onClose }: GiftTwoProps) {
           <motion.h2
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="text-3xl md:text-5xl font-bold text-center mb-8 text-glow"
+            className="text-2xl md:text-5xl font-bold text-center mb-6 md:mb-8 text-glow"
           >
             A Special Message 🎬
           </motion.h2>

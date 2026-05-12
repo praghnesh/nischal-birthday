@@ -3,8 +3,13 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
+import { X, ArrowLeft } from "lucide-react";
 
-export default function Fireworks() {
+interface FireworksProps {
+  onBack: () => void;
+}
+
+export default function Fireworks({ onBack }: FireworksProps) {
   useEffect(() => {
     const duration = 15 * 1000;
     const animationEnd = Date.now() + duration;
@@ -53,7 +58,7 @@ export default function Fireworks() {
             ]
           }}
           transition={{ repeat: Infinity, duration: 2 }}
-          className="text-6xl md:text-9xl font-black italic tracking-tighter text-white"
+          className="text-4xl md:text-9xl font-black italic tracking-tighter text-white"
         >
           WE LOVE YOU <br />
           <span className="bg-gradient-to-r from-gold-bright via-pink-glow to-white bg-clip-text text-transparent">
@@ -65,10 +70,20 @@ export default function Fireworks() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1 }}
-          className="mt-8 text-xl md:text-3xl text-white/60 font-light tracking-widest uppercase"
+          className="mt-6 md:mt-8 text-lg md:text-3xl text-white/60 font-light tracking-widest uppercase"
         >
           Happy Birthday Once Again! ✨
         </motion.p>
+
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+          onClick={onBack}
+          className="mt-12 flex items-center gap-2 mx-auto px-6 py-2 glass rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
+        >
+          <ArrowLeft className="w-4 h-4" /> Back to Gifts
+        </motion.button>
       </motion.div>
 
       {/* Floating Elements */}

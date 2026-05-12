@@ -82,7 +82,7 @@ export default function BirthdayPage() {
         )}
 
         {stage === "final" && (
-          <Fireworks key="final" />
+          <Fireworks key="final" onBack={() => setStage("surprise")} />
         )}
       </AnimatePresence>
 
