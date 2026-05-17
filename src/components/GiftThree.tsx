@@ -17,6 +17,9 @@ const items = [
   { src: "/photos/family_1_new.png", title: "Family Moments 🎉", desc: "Celebrations are better with you.", size: "normal" },
   { src: "/photos/childhood_2_new.jpg", title: "Chilipi Panulu 😜", desc: "Nee mischiefs common eh ga!", size: "tall" },
   { src: "/photos/childhood_3_new.jpg", title: "Posing 📸", desc: "Always ready for a picture!", size: "tall" },
+  { src: "/photos/nischal_grandma.jpg", title: "Ammamma Tho 🥹", desc: "Ammamma love anni words lo cheppalenem!", size: "tall" },
+  { src: "/photos/nischal_dad_bro.jpg", title: "Nanna & Bro 💙", desc: "Anni special days tho unnaru mee kosam!", size: "normal" },
+  { src: "/photos/nischal_family_new.png", title: "Family Selfie 🫶", desc: "Mee family love anni kante powerful!", size: "normal" },
 ];
 
 export default function GiftThree({ onClose }: GiftThreeProps) {

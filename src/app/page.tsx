@@ -10,6 +10,7 @@ import GiftTwo from "@/components/GiftTwo";
 import GiftThree from "@/components/GiftThree";
 import BalloonEffects from "@/components/BalloonEffects";
 import Fireworks from "@/components/Fireworks";
+import BirthdayMusic from "@/components/BirthdayMusic";
 
 export default function BirthdayPage() {
   const [stage, setStage] = useState<"intro" | "surprise" | "final">("intro");
@@ -27,6 +28,7 @@ export default function BirthdayPage() {
     <main className="min-h-screen relative overflow-hidden bg-black text-white">
       <FloatingParticles />
       <BalloonEffects />
+      <BirthdayMusic />
       
       <AnimatePresence mode="wait">
         {stage === "intro" && (

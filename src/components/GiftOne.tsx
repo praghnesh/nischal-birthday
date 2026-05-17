@@ -21,6 +21,9 @@ const photos = [
   { src: "/photos/childhood_2_new.jpg", title: "Brothers 💙" },
   { src: "/photos/childhood_3_new.jpg", title: "Handsome Boy ✨" },
   { src: "/photos/family_1_new.png", title: "Family is everything" },
+  { src: "/photos/nischal_grandma.jpg", title: "Nanna & Ammamma 🥹" },
+  { src: "/photos/nischal_dad_bro.jpg", title: "Childhood Vibes 💙" },
+  { src: "/photos/nischal_family_new.png", title: "Our Happy Family 🫶" },
 ];
 
 export default function GiftOne({ onClose }: GiftOneProps) {
