@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Happy Birthday Nishcal! 💙",
-  description: "A special cinematic birthday surprise for our sweet boy Nishcal.",
+  title: "Happy Birthday Nischal Sigireddy! 💙",
+  description: "A special cinematic birthday surprise for our sweet boy Nischal Sigireddy.",
 };
 
 export default function RootLayout({

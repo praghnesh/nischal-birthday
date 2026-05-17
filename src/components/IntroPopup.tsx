@@ -48,7 +48,7 @@ export default function IntroPopup({ onStart }: IntroPopupProps) {
               transition={{ delay: 0.5 }}
               className="text-3xl md:text-5xl font-bold mb-6 text-glow bg-gradient-to-r from-white via-pink-glow to-royal-blue bg-clip-text text-transparent"
             >
-              Hey Nishcal... 💙
+              Hey Nischal Sigireddy... 💙
             </motion.h1>
 
             <motion.p

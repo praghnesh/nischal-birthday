@@ -62,7 +62,7 @@ export default function Fireworks({ onBack }: FireworksProps) {
         >
           WE LOVE YOU <br />
           <span className="bg-gradient-to-r from-gold-bright via-pink-glow to-white bg-clip-text text-transparent">
-            NISHCAL 💙
+            NISCHAL SIGIREDDY 💙
           </span>
         </motion.h1>
 

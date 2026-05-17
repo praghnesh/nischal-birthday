@@ -17,10 +17,10 @@ interface GiftOneProps {
 }
 
 const photos = [
-  { src: "/photos/childhood_1.png", title: "Where it all started" },
-  { src: "/photos/childhood_2.png", title: "Ice cream lover" },
-  { src: "/photos/childhood_3.png", title: "Little champion" },
-  { src: "/photos/family_1.png", title: "Family is everything" },
+  { src: "/photos/childhood_1_new.jpg", title: "Where it all started" },
+  { src: "/photos/childhood_2_new.jpg", title: "Brothers 💙" },
+  { src: "/photos/childhood_3_new.jpg", title: "Handsome Boy ✨" },
+  { src: "/photos/family_1_new.png", title: "Family is everything" },
 ];
 
 export default function GiftOne({ onClose }: GiftOneProps) {
@@ -104,7 +104,7 @@ export default function GiftOne({ onClose }: GiftOneProps) {
         </div>
       ) : (
         <EnvelopeLetter
-          quote={`My Dear Nishcal 💙\n\nNuvvu maa jeevitham lo vachinappati nunchi maa intlo santosham marinta perigindhi…\n\nNee navvu maa andari strength… nee chilipi panulu maa sweetest memories… 🥹\n\nIppudu nuvvu pedda vaadivi ayina… maa kannullo nuvvu inka aa chinna bangaram eh…\n\nNee life lo anni dreams nijam avvali… always smile ra nanna…\n\nHappy Birthday 💙✨`}
+          quote={`Happy Birthday to the amazing 🤩 boy! 🎉\n\nYou are our greatest joy, our pride, and our biggest blessing.\n\nWatching you grow into such a wonderful person fills our heart with happiness. ✨\n\nMay your life always be filled with love, laughter, and success.\n\nLove you forever, dear! 💙`}
           signature="— With Endless Love"
           theme="blue"
           onComplete={onClose}

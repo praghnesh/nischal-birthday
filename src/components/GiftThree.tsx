@@ -11,12 +11,12 @@ interface GiftThreeProps {
 }
 
 const items = [
-  { src: "/photos/gallery_1.png", title: "Trips 🚗", desc: "Ee photo appudu teesam ante… ice cream kosam full drama chesav 😂", size: "tall" },
-  { src: "/photos/gallery_2.png", title: "Funny Expressions 😂", desc: "Always the cool boy! 😎", size: "wide" },
-  { src: "/photos/childhood_1.png", title: "School Memories 📸", desc: "First day of school… you were so brave!", size: "normal" },
-  { src: "/photos/family_1.png", title: "Family Moments 🎉", desc: "Celebrations are better with you.", size: "normal" },
-  { src: "/photos/childhood_2.png", title: "Chilipi Panulu 😜", desc: "Nee mischiefs common eh ga!", size: "tall" },
-  { src: "/photos/childhood_3.png", title: "Trips 🚗", desc: "Exploring the world together.", size: "wide" },
+  { src: "/photos/gallery_1_new.jpg", title: "Brotherhood 🤜🤛", desc: "Best brothers forever!", size: "tall" },
+  { src: "/photos/gallery_2_new.jpg", title: "Style Icon ✨", desc: "Always looking sharp!", size: "tall" },
+  { src: "/photos/childhood_1_new.jpg", title: "School Memories 📸", desc: "First day of school… you were so brave!", size: "normal" },
+  { src: "/photos/family_1_new.png", title: "Family Moments 🎉", desc: "Celebrations are better with you.", size: "normal" },
+  { src: "/photos/childhood_2_new.jpg", title: "Chilipi Panulu 😜", desc: "Nee mischiefs common eh ga!", size: "tall" },
+  { src: "/photos/childhood_3_new.jpg", title: "Posing 📸", desc: "Always ready for a picture!", size: "tall" },
 ];
 
 export default function GiftThree({ onClose }: GiftThreeProps) {
@@ -91,7 +91,7 @@ export default function GiftThree({ onClose }: GiftThreeProps) {
         </div>
       ) : (
         <EnvelopeLetter
-          quote={`Nishcal… 💙\n\nLife lo entha pedda vaadivi ayina… maa prema eppudu neetho untundhi…\n\nNee happiness maa happiness… nee success maa proud moment…\n\nEvery memory with you became a beautiful story ✨\n\nNever stop smiling… never stop dreaming…\n\nYou will always be our precious little boy 💙\n\nHappy Birthday Once Again 🎂✨`}
+          quote={`Our Precious Nischal Sigireddy… 💙\n\nNo matter how old you get, you will always be the light of our lives.\n\nYour happiness is our happiness, and your success is our proudest achievement.\n\nEvery memory we make with you turns into a beautiful story we cherish deeply. ✨\n\nNever stop smiling, never stop dreaming, and never forget how endlessly you are loved.\n\nHappy Birthday Once Again! 🎂✨`}
           signature="— With Eternal Love"
           theme="purple"
           onComplete={onClose}
