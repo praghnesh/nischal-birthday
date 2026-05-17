@@ -6,26 +6,26 @@ import { motion } from "framer-motion";
 export default function BirthdayMusic() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const startedRef = useRef(false);
 
   useEffect(() => {
     const audio = new Audio("/nastelbom-happy-birthday-495860.mp3");
-    audio.loop   = true;
+    audio.loop = true;
     audio.volume = 0.7;
     audioRef.current = audio;
 
-    // Try autoplay immediately on mount
-    audio.play()
-      .then(() => setIsPlaying(true))
-      .catch(() => {
-        // Browser blocked autoplay — wait for first user gesture
-        const handler = () => {
-          audio.play()
-            .then(() => setIsPlaying(true))
-            .catch(() => {});
-        };
-        document.addEventListener("click",   handler, { once: true });
-        document.addEventListener("keydown", handler, { once: true });
-      });
+    // Start music on very first user interaction (touch, click, or key)
+    const startMusic = () => {
+      if (startedRef.current) return;
+      startedRef.current = true;
+      audio.play()
+        .then(() => setIsPlaying(true))
+        .catch(() => {});
+    };
+
+    document.addEventListener("touchstart", startMusic, { once: true, passive: true });
+    document.addEventListener("click",      startMusic, { once: true });
+    document.addEventListener("keydown",    startMusic, { once: true });
 
     return () => {
       audio.pause();
@@ -42,7 +42,7 @@ export default function BirthdayMusic() {
       audio.pause();
       setIsPlaying(false);
     } else {
-      audio.play().catch(() => {});
+      audio.play().catch(() => { });
       setIsPlaying(true);
     }
   };

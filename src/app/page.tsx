@@ -29,7 +29,7 @@ export default function BirthdayPage() {
       <FloatingParticles />
       <BalloonEffects />
       <BirthdayMusic />
-      
+
       <AnimatePresence mode="wait">
         {stage === "intro" && (
           <IntroPopup key="intro" onStart={handleStart} />
